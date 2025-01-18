@@ -5,53 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Электролитическая диссоциация и электролиты</title>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        /* Общие стили для страницы */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.4;
             background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
 
-        /* Размеры страницы и отступы */
         .page {
-            width: 210mm;
-            height: 297mm;
-            padding: 20mm;
-            box-sizing: border-box;
-            page-break-before: always;
-        }
-
-        .page:last-child {
-            page-break-before: auto;
-        }
-
-        .page-content {
-            max-width: 180mm;
-            margin: auto;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2, h3 {
             color: #005b96;
-            margin-top: 10px;
-            font-size: 18px;
         }
 
         h1 {
+            font-size: 24px;
+        }
+
+        h2 {
             font-size: 22px;
         }
 
+        h3 {
+            font-size: 18px;
+        }
+
         p {
-            font-size: 14px;
+            font-size: 16px;
             margin: 10px 0;
         }
 
         ul {
-            font-size: 14px;
+            font-size: 16px;
             margin: 5px 0;
-            padding-left: 20px;
         }
 
         li {
@@ -70,39 +66,47 @@
             padding: 5px;
             border-radius: 5px;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
+            font-size: 16px;
+            margin: 10px 0;
         }
 
         .footer {
-            position: fixed;
-            bottom: 10mm;
-            left: 20mm;
-            font-size: 10px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
         }
 
-        /* Стиль для колонтитулов */
-        @page {
-            margin: 0;
-            size: A4;
-        }
-        
-        .half-page {
-            display: inline-block;
-            width: 48%;
-            vertical-align: top;
-            padding: 10px;
-        }
+        /* Стили для мобильных устройств */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 20px;
+            }
 
-        .clearfix {
-            clear: both;
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p, ul {
+                font-size: 14px;
+            }
+
+            .formula {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Первая страница -->
-    <div class="page">
-        <div class="page-content">
+    <div class="container my-5">
+
+        <div class="page">
             <h1>Электролитическая диссоциация, электролиты и неэлектролиты</h1>
 
             <h2>1. Электролитическая диссоциация</h2>
@@ -134,11 +138,8 @@
                 <li><strong>Неэлектролиты (\( \alpha = 0 \)):</strong> не диссоциируют. Примеры: глюкоза, этанол.</li>
             </ul>
         </div>
-    </div>
 
-    <!-- Вторая страница -->
-    <div class="page">
-        <div class="page-content">
+        <div class="page">
             <h2>Сильные и слабые электролиты: определения, принадлежность к классам веществ, примеры уравнений диссоциации</h2>
 
             <h3>1. Сильные электролиты</h3>
@@ -211,43 +212,13 @@
                 \text{HS}^- \rightleftharpoons \text{H}^+ + \text{S}^{2-}
                 \]
             </div>
-
-            <hr>
-
-            <h2>Диссоциация слабого основания на примере гидроксида аммония (NH₄OH)</h2>
-
-            <p><strong>Уравнение диссоциации:</strong></p>
-            <div class="formula">
-                \[
-                \text{NH}_4\text{OH} \rightleftharpoons \text{NH}_4^+ + \text{OH}^-
-                \]
-            </div>
-
-            <p><strong>Константа диссоциации для основания:</strong></p>
-            <div class="formula">
-                \[
-                K_b = \frac{[\text{NH}_4^+][\text{OH}^-]}{[\text{NH}_4\text{OH}]}
-                \]
-            </div>
-
-            <hr>
-
-            <h2>Закон разбавления Оствальда</h2>
-            <p>Закон связывает степень диссоциации слабого электролита с его концентрацией и константой диссоциации:</p>
-            <div class="formula">
-                \[
-                K_a = \frac{c \cdot \alpha^2}{1 - \alpha}
-                \]
-            </div>
-            <p>При сильном разбавлении (\( \alpha \ll 1 \)): \( 1 - \alpha \approx 1 \), формула упрощается:</p>
-            <div class="formula">
-                \[
-                \alpha \approx \sqrt{\frac{K}{c}}
-                \]
-            </div>
-            <p>Закон объясняет, почему слабые электролиты диссоциируют больше при уменьшении концентрации.</p>
         </div>
+        
     </div>
 
+    <!-- Подключение Bootstrap JS и его зависимостей -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
