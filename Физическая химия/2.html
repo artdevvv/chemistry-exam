@@ -5,53 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I и II законы Рауля для растворов</title>
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        /* Общие стили для страницы */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.4;
             background-color: #f8f8f8;
-        }
-
-        /* Размеры страницы и отступы */
-        .page {
-            width: 210mm;
-            height: 297mm;
-            padding: 20mm;
-            box-sizing: border-box;
-            page-break-before: always;
-        }
-
-        .page:last-child {
-            page-break-before: auto;
-        }
-
-        .page-content {
-            max-width: 180mm;
-            margin: auto;
+            line-height: 1.6;
         }
 
         h1, h2, h3 {
             color: #005b96;
-            margin-top: 10px;
-            font-size: 18px;
         }
 
         h1 {
+            font-size: 24px;
+        }
+
+        h2 {
             font-size: 22px;
         }
 
+        h3 {
+            font-size: 18px;
+        }
+
         p {
-            font-size: 14px;
+            font-size: 16px;
             margin: 10px 0;
         }
 
         ul {
-            font-size: 14px;
+            font-size: 16px;
             margin: 5px 0;
-            padding-left: 20px;
         }
 
         li {
@@ -70,38 +58,38 @@
             padding: 5px;
             border-radius: 5px;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 14px;
+            font-size: 16px;
+            margin: 10px 0;
         }
 
-        .footer {
-            position: fixed;
-            bottom: 10mm;
-            left: 20mm;
-            font-size: 10px;
-        }
+        /* Стили для мобильных устройств */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 20px;
+            }
 
-        /* Стиль для колонтитулов */
-        @page {
-            margin: 0;
-            size: A4;
-        }
-        
-        .half-page {
-            display: inline-block;
-            width: 48%;
-            vertical-align: top;
-            padding: 10px;
-        }
+            h2 {
+                font-size: 18px;
+            }
 
-        .clearfix {
-            clear: both;
+            h3 {
+                font-size: 16px;
+            }
+
+            p, ul {
+                font-size: 14px;
+            }
+
+            .formula {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Первая страница -->
-    <div class="page">
+    <div class="container my-5">
+
         <div class="page-content">
             <h1>I и II законы Рауля для растворов</h1>
             
@@ -115,11 +103,11 @@
                 \]
             </div>
             <p>где:  
-            \begin{itemize}
+            <ul>
                 <li>\(\Delta P\) – понижение давления насыщенного пара растворителя,</li>
                 <li>\(P_0\) – давление насыщенного пара чистого растворителя,</li>
                 <li>\(x_2\) – молярная доля растворённого вещества.</li>
-            </begin{itemize}</p>
+            </ul></p>
             <div class="example">
                 <strong>Простыми словами:</strong> Если добавить в растворитель вещество (например, соль или сахар), его пары испаряются медленнее, так как часть растворителя связывается с частицами вещества.
             </div>
@@ -142,21 +130,18 @@
                 \]
             </div>
             <p>где:  
-            \begin{itemize}
+            <ul>
                 <li>\(\Delta T_{\text{кип}}\) и \(\Delta T_{\text{зам}}\) – изменения температуры кипения или замерзания,</li>
                 <li>\(k_{\text{кип}}\) и \(k_{\text{зам}}\) – константы эбуллиоскопии и криоскопии (зависят от растворителя),</li>
                 <li>\(m\) – моляльная концентрация (число молей вещества на 1 кг растворителя).</li>
-            </begin{itemize}</p>
+            </ul></p>
 
             <div class="example">
                 <strong>Простыми словами:</strong> Растворы закипают при более высокой температуре и замерзают при более низкой температуре, чем чистый растворитель.
             </div>
-        </div>
-    </div>
 
-    <!-- Вторая страница -->
-    <div class="page">
-        <div class="page-content">
+            <hr>
+
             <h2>Изотонический коэффициент (\(i\))</h2>
             <p><strong>Физический смысл:</strong> Изотонический коэффициент показывает, насколько реальное число частиц в растворе отличается от числа молекул растворённого вещества из-за диссоциации или ассоциации.</p>
 
@@ -166,11 +151,11 @@
                 \]
             </div>
             <p>где:  
-            \begin{itemize}
+            <ul>
                 <li>\(i\) – изотонический коэффициент,</li>
                 <li>\(\alpha\) – степень диссоциации,</li>
                 <li>\(n\) – число ионов, на которые распадается одна молекула (например, для NaCl \(n = 2\), для CaCl₂ \(n = 3\)).</li>
-            </begin{itemize}</p>
+            </ul></p>
 
             <hr>
 
@@ -185,7 +170,12 @@
             </div>
 
         </div>
+
     </div>
 
+    <!-- Подключение Bootstrap JS и его зависимостей -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
