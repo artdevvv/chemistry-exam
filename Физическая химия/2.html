@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I и II законы Рауля для растворов</title>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+            background-color: #f8f8f8;
+        }
+
+        /* Размеры страницы и отступы */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 20mm;
+            box-sizing: border-box;
+            page-break-before: always;
+        }
+
+        .page:last-child {
+            page-break-before: auto;
+        }
+
+        .page-content {
+            max-width: 180mm;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            color: #005b96;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        ul {
+            font-size: 14px;
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #005b96;
+            margin: 10px 0;
+        }
+
+        .formula {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 10mm;
+            left: 20mm;
+            font-size: 10px;
+        }
+
+        /* Стиль для колонтитулов */
+        @page {
+            margin: 0;
+            size: A4;
+        }
+        
+        .half-page {
+            display: inline-block;
+            width: 48%;
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Первая страница -->
+    <div class="page">
+        <div class="page-content">
+            <h1>I и II законы Рауля для растворов</h1>
+            
+            <p>Рауль сформулировал законы, описывающие свойства растворов. Они применимы для разбавленных растворов, где растворённое вещество не летучее (не испаряется) или является электролитом.</p>
+
+            <h2>I закон Рауля</h2>
+            <p><strong>Формулировка:</strong> Снижение давления насыщенного пара растворителя над раствором пропорционально молярной доле растворённого вещества.</p>
+            <div class="formula">
+                \[
+                \Delta P = P_0 \cdot x_2
+                \]
+            </div>
+            <p>где:  
+            \begin{itemize}
+                <li>\(\Delta P\) – понижение давления насыщенного пара растворителя,</li>
+                <li>\(P_0\) – давление насыщенного пара чистого растворителя,</li>
+                <li>\(x_2\) – молярная доля растворённого вещества.</li>
+            </begin{itemize}</p>
+            <div class="example">
+                <strong>Простыми словами:</strong> Если добавить в растворитель вещество (например, соль или сахар), его пары испаряются медленнее, так как часть растворителя связывается с частицами вещества.
+            </div>
+
+            <hr>
+
+            <h2>II закон Рауля</h2>
+            <p><strong>Формулировка:</strong> Повышение температуры кипения или понижение температуры замерзания раствора пропорционально моляльной концентрации растворённого вещества.</p>
+
+            <h3>1. Повышение температуры кипения:</h3>
+            <div class="formula">
+                \[
+                \Delta T_{\text{кип}} = k_{\text{кип}} \cdot m
+                \]
+            </div>
+            <h3>2. Понижение температуры замерзания:</h3>
+            <div class="formula">
+                \[
+                \Delta T_{\text{зам}} = k_{\text{зам}} \cdot m
+                \]
+            </div>
+            <p>где:  
+            \begin{itemize}
+                <li>\(\Delta T_{\text{кип}}\) и \(\Delta T_{\text{зам}}\) – изменения температуры кипения или замерзания,</li>
+                <li>\(k_{\text{кип}}\) и \(k_{\text{зам}}\) – константы эбуллиоскопии и криоскопии (зависят от растворителя),</li>
+                <li>\(m\) – моляльная концентрация (число молей вещества на 1 кг растворителя).</li>
+            </begin{itemize}</p>
+
+            <div class="example">
+                <strong>Простыми словами:</strong> Растворы закипают при более высокой температуре и замерзают при более низкой температуре, чем чистый растворитель.
+            </div>
+        </div>
+    </div>
+
+    <!-- Вторая страница -->
+    <div class="page">
+        <div class="page-content">
+            <h2>Изотонический коэффициент (\(i\))</h2>
+            <p><strong>Физический смысл:</strong> Изотонический коэффициент показывает, насколько реальное число частиц в растворе отличается от числа молекул растворённого вещества из-за диссоциации или ассоциации.</p>
+
+            <div class="formula">
+                \[
+                i = 1 + \alpha \cdot (n - 1)
+                \]
+            </div>
+            <p>где:  
+            \begin{itemize}
+                <li>\(i\) – изотонический коэффициент,</li>
+                <li>\(\alpha\) – степень диссоциации,</li>
+                <li>\(n\) – число ионов, на которые распадается одна молекула (например, для NaCl \(n = 2\), для CaCl₂ \(n = 3\)).</li>
+            </begin{itemize}</p>
+
+            <hr>
+
+            <h3>Пример влияния \(i\):</h3>
+            <ul>
+                <li><strong>Неэлектролиты (глюкоза):</strong> \(i = 1\) (частицы не распадаются).</li>
+                <li><strong>Электролиты (NaCl):</strong> \(i > 1\), так как NaCl диссоциирует на Na⁺ и Cl⁻, увеличивая число частиц.</li>
+            </ul>
+
+            <div class="example">
+                <strong>Простыми словами:</strong> Чем больше частиц образуется в растворе (за счёт диссоциации), тем сильнее раствор влияет на свойства растворителя (например, на температуру кипения или замерзания).
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
