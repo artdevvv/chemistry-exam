@@ -4,62 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гидролиз солей слабых кислот и сильных оснований</title>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
         body {
+            background-color: #f8f8f8;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
-            max-width: 100%;
-            background-color: #f4f4f4;
         }
-        .container {
-            max-width: 210mm;
-            margin: auto;
-            padding: 10mm;
-            background-color: white;
+
+        .page {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #333;
-            text-align: center;
+
+        h1, h2, h3 {
+            color: #005b96;
         }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
         p {
-            font-size: 14px;
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-        .formula {
-            font-size: 1.2em;
-            font-family: 'Courier New', Courier, monospace;
-            text-align: center;
+            font-size: 16px;
             margin: 10px 0;
         }
+
         ul {
-            margin-left: 20px;
+            font-size: 16px;
+            margin: 5px 0;
         }
-        .section {
-            margin-bottom: 15mm;
+
+        li {
+            margin-bottom: 5px;
         }
-        hr {
-            border: 0;
+
+        .example {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-left: 5px solid #005b96;
+            margin: 10px 0;
+        }
+
+        .formula {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .footer {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            padding: 10px 0;
             border-top: 1px solid #ccc;
-            margin: 15px 0;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p, ul {
+                font-size: 14px;
+            }
+
+            .formula {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Гидролиз солей слабых кислот и сильных оснований</h1>
-        
-        <div class="section">
-            <h2>Определение гидролиза</h2>
-            <p>Гидролиз — это процесс взаимодействия соли с водой, в результате которого происходит образование ионов \(H^+\) или \(OH^-\) в растворе. Этот процесс характерен для солей, образованных слабой кислотой и сильным основанием.</p>
-        </div>
+    <div class="container my-5">
 
-        <div class="section">
-            <h2>Пример гидролиза фторида натрия (NaF)</h2>
+        <div class="page">
+            <h1>Гидролиз солей слабых кислот и сильных оснований</h1>
+
+            <h2>1. Определение гидролиза</h2>
+            <p>Гидролиз — это процесс взаимодействия соли с водой, в результате которого происходит образование ионов \(H^+\) или \(OH^-\) в растворе. Этот процесс характерен для солей, образованных слабой кислотой и сильным основанием.</p>
+
+            <h2>2. Пример гидролиза фторида натрия (NaF)</h2>
             <p><strong>Фторид натрия (NaF)</strong> — это соль, образованная слабой кислотой (HF) и сильным основанием (NaOH). Когда NaF растворяется в воде, происходит гидролиз.</p>
             <p><strong>Реакция гидролиза NaF:</strong></p>
             <div class="formula">
@@ -75,10 +128,8 @@
                 \text{F}^- (aq) + H_2O (l) \rightleftharpoons HF (aq) + OH^- (aq)
                 \]
             </div>
-        </div>
 
-        <div class="section">
-            <h2>Константа гидролиза (\(K_h\))</h2>
+            <h2>3. Константа гидролиза (\(K_h\))</h2>
             <p><strong>Определение:</strong> Константа гидролиза \(K_h\) — это константа равновесия для реакции гидролиза соли, которая показывает степень взаимодействия соли с водой.</p>
             <p>Для реакции гидролиза фторида натрия уравнение для константы гидролиза будет выглядеть так:</p>
             <div class="formula">
@@ -93,15 +144,13 @@
                 \]
             </div>
             <p>где \(K_w\) — ионное произведение воды (при 25°C \(K_w = 1 \times 10^{-14}\)), \(K_a\) — константа диссоциации слабой кислоты HF.</p>
-        </div>
 
-        <div class="section">
-            <h2>Влияние температуры на константу гидролиза</h2>
+            <h2>4. Влияние температуры на константу гидролиза</h2>
             <p>Как и многие химические реакции, гидролиз также зависит от температуры. При повышении температуры константа гидролиза увеличивается, что приводит к увеличению концентрации \(OH^-\) и снижению кислотности раствора (pH возрастает). Это связано с тем, что реакция гидролиза экзотермична, то есть нагрев её усиливает.</p>
-        </div>
 
-        <div class="section">
-            <h2>Расчёт концентрации \(OH^-\) и pH раствора фторида натрия</h2>
+            <hr>
+
+            <h2>5. Расчёт концентрации \(OH^-\) и pH раствора фторида натрия</h2>
             <p><strong>1. Степень гидролиза (\( \alpha \)):</strong> Степень гидролиза — это отношение молекул соли, которые подверглись гидролизу, к общему количеству молекул соли. Формула для степени гидролиза:</p>
             <div class="formula">
                 \[
@@ -141,10 +190,10 @@
                 pH = 14 - pOH
                 \]
             </div>
-        </div>
 
-        <div class="section">
-            <h2>Степень гидролиза</h2>
+            <hr>
+
+            <h2>6. Степень гидролиза</h2>
             <p><strong>Определение:</strong> Степень гидролиза (\(\alpha\)) — это доля растворённой соли, которая подверглась гидролизу. Она может быть найдена через константу гидролиза и начальную концентрацию соли.</p>
             <p><strong>Расчёт:</strong></p>
             <div class="formula">
@@ -158,29 +207,16 @@
                     <li>\(C_{\text{NaF}}\) — начальная концентрация соли NaF.</li>
                 </ul>
             </p>
-        </div>
 
-        <div class="section">
-            <h2>Роль гидролиза в регуляции биологических процессов</h2>
-            <p>Гидролиз солей, например, таких как фторид натрия, играет важную роль в биологических системах. Он влияет на кислотно-щелочной баланс в клетках и в организме в целом, участвуя в таких процессах как:</p>
-            <ul>
-                <li><strong>Поддержание pH крови:</strong> Нормальный pH крови должен быть слабощелочным (около 7,4). Понижение или повышение pH может привести к метаболическим нарушениям (ацидоз или алкалоз).</li>
-                <li><strong>Гидролиз в пищеварении:</strong> Гидролиз солей в желудочном соке и в кишечнике помогает расщеплять вещества и поддерживать оптимальную среду для работы ферментов.</li>
-                <li><strong>Буферные системы организма:</strong> Гидролиз солей играет ключевую роль в буферных системах, которые поддерживают стабильность pH в клетках и тканях организма, предотвращая резкие колебания кислотности.</li>
-            </ul>
-        </div>
+            <h2>7. Роль гидролиза в регуляции биологических процессов</h2>
+            <p>Гидролиз солей, например, таких как фторид натрия, играет важную роль в биологических системах. Он влияет на кислотно-щелочной баланс организма, помогая поддерживать оптимальный уровень pH в клетках и тканях. В частности, фториды могут воздействовать на активность ферментов и другие биохимические процессы.</p>
 
-        <div class="section">
-            <h2>Резюме</h2>
-            <ul>
-                <li><strong>Гидролиз</strong> — процесс взаимодействия соли с водой, в результате которого образуются ионы \(OH^-\) или \(H^+\).</li>
-                <li><strong>Гидролиз фторида натрия (NaF)</strong> приводит к образованию \(OH^-\) и слабой кислоты HF в растворе.</li>
-                <li>Константа гидролиза зависит от температуры и от слабости кислоты, из которой соль образована.</li>
-                <li>Гидролиз влияет на pH раствора, и его степень можно вычислить через концентрацию и константу гидролиза.</li>
-                <li>В биологических процессах гидролиз играет ключевую роль в регуляции кислотно-щелочного баланса, поддержании pH крови и нормальной работы ферментов.</li>
-            </ul>
         </div>
     </div>
 
+    <!-- Подключение Bootstrap JS и его зависимостей -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
