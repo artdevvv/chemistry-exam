@@ -1,0 +1,115 @@
+/* Адаптивный хедер */
+header {
+    background-color: rgb(12, 16, 33); /* RGB: 12, 16, 33 */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Шрифт Arial */
+}
+
+/* Ссылка "Главная" */
+header a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Адаптивность */
+@media (max-width: 767px) {
+    header a {
+        font-size: 20px;
+    }
+}
+
+/* Общие стили */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.page {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: #005b96;
+}
+
+h1 {
+    font-size: 20px;
+	color: black;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+ul {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.example {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #005b96;
+    margin: 10px 0;
+}
+
+.formula {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p, ul {
+        font-size: 18px;
+    }
+
+    .formula {
+        font-size: 18px;
+    }
+}
