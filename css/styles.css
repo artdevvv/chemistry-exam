@@ -41,11 +41,14 @@ body {
 
 h2, h3 {
     color: #005b96;
+	margin-top: 30px;
 }
 
 h1 {
     font-size: 20px;
 	color: black;
+	margin-top: 30px;
+	background-color: #92b284;
 }
 
 h2 {
